@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Typography from '@mui/material/Typography';
+import FilmsCarousel from './components/Carousel/components/FilmsCarousel';
 
-function App() {
+const App: React.FC = () =>  {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <h1 className='Header'>Star Wars App</h1>
+      <Typography variant="h6" gutterBottom className='Subtitle'>
+        Welcome to the StarWars world with all the movies and planets and characters details.
+      </Typography>
+      <FilmsCarousel />
     </div>
   );
 }

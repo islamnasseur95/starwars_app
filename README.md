@@ -44,3 +44,13 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Components file
+
+You can find all the reusable components on the Component file: 
+ - Carousel: 
+   - Components: contains a component file (FilmsCarousel.tsx) that holds the reusable componenet itself. 
+   - Containers: contains the FilmsProvider file that holds the Context holding asynchrounous functions that get the data from the api file and manage them and sends them to FilmsCarousel file.
+   - api.tsx file that holds all the post and get requests needed for the Carousel.  
+ - Navbar: contains the navbar component used on the main page. 
+
